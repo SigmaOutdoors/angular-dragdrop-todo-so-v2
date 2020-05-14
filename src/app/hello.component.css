@@ -1,0 +1,45 @@
+div {
+  font-family: Lato;
+}
+
+.col-sm {
+  padding : 2px;
+}
+
+.task {
+
+  margin-bottom: 0.5em;
+  background: whitesmoke;
+  cursor: pointer;
+  font-size: 0.85em;
+  font-family: "Roboto Slab", sans-serif;      
+    border-left-style: solid;
+   /* border-left-color: red; */
+    padding: 5px;
+}
+.task:hover {
+  outline: 3px solid #205081;
+}
+
+.heading {
+  padding: 1em 0;
+  font-weight: bolder;
+  background: #ffffff;
+  color: #000000;
+  border-bottom: 0.5em solid #ffffff;
+  text-align: center;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+
+.priorityHigh {
+  border-left-color : red;
+}
+
+.priorityLow {
+  border-left-color: blue;
+}
+
+.priorityMedium {
+  border-left-color : orange;
+}

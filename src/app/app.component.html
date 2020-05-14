@@ -1,0 +1,13 @@
+<h2>Tasks Mock Up</h2>
+
+<div cdkDropListGroup>
+	<!-- All lists in cdkDropListGroup will be connected. -->
+	<div class="container">
+		<div class="row">
+			<todo-lane class="col-sm"  name='To Do' [list]="toDoList"></todo-lane >
+			<todo-lane  class="col-sm"  name='In Progress' [list]="inProgressList"></todo-lane >
+			<todo-lane  class="col-sm"  name='Done' [list]="doneList"></todo-lane >
+		</div>
+	</div>
+</div>
+
