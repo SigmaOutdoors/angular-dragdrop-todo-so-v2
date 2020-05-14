@@ -8,21 +8,21 @@ div {
 
 .task {
 
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
   background: whitesmoke;
   cursor: pointer;
   font-size: 0.85em;
   font-family: "Roboto Slab", sans-serif;      
     border-left-style: solid;
    /* border-left-color: red; */
-    padding: 5px;
+    padding: 0px;
 }
 .task:hover {
   outline: 3px solid #205081;
 }
 
 .heading {
-  padding: 1em 0;
+  padding: .5em 0;
   font-weight: bolder;
   background: #ffffff;
   color: #000000;

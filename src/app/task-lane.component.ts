@@ -13,6 +13,15 @@ export class TaskLaneComponent  {
 
 
 
+  trash(list : any[], index)
+  {
+    // alert('kiko!'+ index);
+
+    list.splice(index,1);
+
+  }
+
+
   drop(event: CdkDragDrop<string[]>) {
     // console.log(event)
     if (event.previousContainer === event.container) {
