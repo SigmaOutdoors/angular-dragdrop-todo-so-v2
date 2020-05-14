@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
 
 @Component({
-  selector: 'todo-lane',
+  selector: 'task-lane',
   templateUrl:'./task-lane.component.html',
    styleUrls: ['./task-lane.component.css']
 })
