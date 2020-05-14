@@ -3,10 +3,10 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
 
 @Component({
   selector: 'todo-lane',
-  templateUrl:'./hello.component.html',
-   styleUrls: ['./hello.component.css']
+  templateUrl:'./task-lane.component.html',
+   styleUrls: ['./task-lane.component.css']
 })
-export class HelloComponent  {
+export class TaskLaneComponent  {
   @Input() name: string;
   @Input() list : any;
   @Input() connectedTo : any;
