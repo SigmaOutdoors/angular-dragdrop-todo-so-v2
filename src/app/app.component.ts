@@ -2,17 +2,41 @@ import { Component } from '@angular/core';
 import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
 
 import * as faker from 'faker';
+import {
+  AUTO_STYLE,
+  animate,
+  state,
+  style,
+  transition,
+  trigger
+} from '@angular/animations';
+
+
+const DEFAULT_DURATION = 300;
+
+
 
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  animations: [
+    
+    trigger('collapse', [
+      state('false', style({ height: AUTO_STYLE, visibility: AUTO_STYLE })),
+      state('true', style({ height: '0', visibility: 'hidden' })),
+      transition('false => true', animate(DEFAULT_DURATION + 'ms ease-in')),
+      transition('true => false', animate(DEFAULT_DURATION + 'ms ease-out'))
+    ])
+  ]
 })
 export class AppComponent {
   toDoList = [];
-
+  collapsed = false;
   inProgressList = [];
   doneList = [];
+
+
   constructor() {
      //this.toDoList1 = Array.from({ length: 5 }).map(() => faker.hacker.phrase());
     
@@ -89,5 +113,15 @@ export class AppComponent {
   }
   onEntered(enter) {
     console.log('ee', enter);
+  }
+
+  taskStatus = ""
+  bb()
+  {
+    this.collapsed = !this.collapsed;
+    if (this.collapsed)
+       this.taskStatus = "Tasks...";
+       else 
+       this.taskStatus = "";
   }
 }

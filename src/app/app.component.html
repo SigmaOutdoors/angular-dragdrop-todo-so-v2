@@ -1,8 +1,10 @@
 <h2>Tasks Mock Up</h2>
+<div class="collapseDiv"><i class="fa" [ngClass]="{'fa-angle-double-up': collapsed, 'fa-angle-double-down': !collapsed}" aria-hidden="true"  (click)="bb()"></i> <span class="taskStatus"> {{taskStatus}}</span>
+</div>
 
 <div cdkDropListGroup>
 	<!-- All lists in cdkDropListGroup will be connected. -->
-	<div class="container">
+	<div class="container collapsible" [@collapse]="collapsed" >
 		<div class="row">
 			<task-lane class="col-sm"  name='To Do' [list]="toDoList"></task-lane >
 			<task-lane  class="col-sm"  name='In Progress' [list]="inProgressList"></task-lane >

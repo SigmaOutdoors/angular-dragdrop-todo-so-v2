@@ -47,9 +47,21 @@ div {
   font-family: "Roboto Slab", sans-serif;
 }
 
+.collapseDiv {
+  padding-left : 5px;
+}
+.taskStatus {
+  font-size: smaller;
+  color : grey;
+}
 .todo {
   background: #3572b0;
 }
+
+.collapsible {
+  overflow: hidden;
+}
+
 
 .doing {
   background: #f6c342;

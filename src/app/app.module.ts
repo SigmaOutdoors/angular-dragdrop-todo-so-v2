@@ -5,9 +5,10 @@ import { DragDropModule  } from '@angular/cdk/drag-drop';
 
 import { AppComponent } from './app.component';
 import { TaskLaneComponent } from './task-lane.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, DragDropModule ],
+  imports:      [ BrowserModule, FormsModule, DragDropModule , BrowserAnimationsModule],
   declarations: [ AppComponent, TaskLaneComponent ],
   bootstrap:    [ AppComponent ]
 })
