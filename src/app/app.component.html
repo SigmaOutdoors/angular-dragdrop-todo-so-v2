@@ -13,3 +13,41 @@
 	</div>
 </div>
 
+
+  <div class="example-wrapper">
+        <button type="button" class="btn btn-info"  *ngIf="!opened" (click)="open()">Add Task</button>
+        <p *ngIf="dataSaved">Data has been saved</p>
+        <kendo-window title="Task Details"   [(top)]="windowTop"  *ngIf="opened" (close)="close()" [minWidth]="250" [width]="450">
+
+        <form class="k-form">
+            <fieldset>
+                <!-- <legend>User Details</legend> -->
+
+                <label class="k-form-field">
+                    <span>Task Description</span>
+                    <input class="k-textbox" [(ngModel)]="nn.desc" name="yourName" placeholder="Task Description" />
+                </label>
+
+                <label class="k-form-field">
+                    <span>Priority</span>
+                    <input class="k-textbox" placeholder="Priority" />
+                </label>
+                <label class="k-form-field">
+                    <span>Due Date</span>
+                    <input class="k-textbox" placeholder="Due Date" />
+                </label>
+               <label class="k-form-field">
+                    <span>Owner</span>
+                    <input class="k-textbox" placeholder="Owner" />
+                </label>
+
+            </fieldset>
+
+            <div class="text-right">
+                <button type="button" class="k-button" (click)="close()">Cancel</button>
+                <button type="button" class="k-button k-primary" (click)="submit()">Submit</button>
+            </div>
+        </form>
+
+        </kendo-window>
+      </div>

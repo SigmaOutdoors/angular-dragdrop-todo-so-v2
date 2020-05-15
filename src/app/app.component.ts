@@ -36,6 +36,29 @@ export class AppComponent {
   inProgressList = [];
   doneList = [];
 
+  // window stuff
+
+ public windowTop: number = 100;
+  public opened = false;
+    public dataSaved = false;
+    nn = { "desc" : "", priority: "", dueDate : "", owner : "" };
+    public close() {
+      this.opened = false;
+    }
+
+    public open() {
+      this.opened = true;
+    }
+
+    public submit() {
+        this.dataSaved = true;
+        console.log(this.nn.desc);
+        this.close();
+    }
+
+  //window stuff
+
+
 
   constructor() {
      //this.toDoList1 = Array.from({ length: 5 }).map(() => faker.hacker.phrase());
