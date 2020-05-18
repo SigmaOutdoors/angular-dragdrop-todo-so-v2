@@ -22,25 +22,27 @@
         <form class="k-form">
             <fieldset>
                 <!-- <legend>User Details</legend> -->
-
-                <label class="k-form-field">
+<div class="wrap">
+                <label class="k-form-field desc">
                     <span>Task Description</span>
                     <input class="k-textbox" [(ngModel)]="nn.desc" name="yourName" placeholder="Task Description" />
                 </label>
 
-                <label class="k-form-field">
+                <label class="k-form-field priority">
                     <span>Priority</span>
                     <input class="k-textbox" placeholder="Priority" />
                 </label>
-                <label class="k-form-field">
+  </div>
+  <div class="wrap">
+                <label class="k-form-field ddate">
                     <span>Due Date</span>
-                    <input class="k-textbox" placeholder="Due Date" />
+                    <input class="k-textbox " placeholder="Due Date" />
                 </label>
-               <label class="k-form-field">
+               <label class="k-form-field owner">
                     <span>Owner</span>
-                    <input class="k-textbox" placeholder="Owner" />
+                    <input class="k-textbox " placeholder="Owner" />
                 </label>
-
+  </div>
             </fieldset>
 
             <div class="text-right">

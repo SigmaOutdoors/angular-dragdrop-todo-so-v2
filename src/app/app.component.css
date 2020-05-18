@@ -6,6 +6,28 @@ div {
   padding : 2px;
 }
 
+  .wrap {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .wrap .desc {
+          width: 65%;
+        }
+        .wrap .priority {
+          width: 30%;
+        }
+
+
+       .wrap .ddate {
+          width: 65%;
+
+        }
+         .wrap .owner {
+          width: 30%;
+
+        }
+
 .board {
   width: 100%;
   border: 0px solid saddlebrown;
